@@ -18,6 +18,10 @@ body {
   background: #BDC0BE;
 }
 
+nav {
+  background-color: #D7D9D7;
+}
+
 /*CONTENIDO DE LA PAGINA DE INICIO CON BS Y FLEXBOX*/
 .flyers {
   display: flex;
@@ -31,8 +35,9 @@ body {
 
 .card {
   margin: 2em;
-  width: 22rem;
+  width: 25rem;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  padding: 1em;
 }
 
 .destacados {
@@ -183,6 +188,27 @@ footer a:hover, footer span:hover {
 }
 .btn:hover {
   background: #D7D9D7;
+}
+
+.contenedor {
+  background: rgb(100, 110, 104);
+  background: radial-gradient(circle, rgb(100, 110, 104) 0%, rgb(191, 105, 0) 40%, rgb(215, 217, 215) 100%);
+}
+
+.pc-armadas {
+  background-color: #BF6900;
+  font-size: 2em;
+  font-family: Montserrat;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 2em 1em 0 1em;
+}
+
+.computadoras-armadas {
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* PAGINA NOTEBOOKS */
