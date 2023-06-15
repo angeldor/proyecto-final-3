@@ -195,9 +195,32 @@ footer{
     justify-content: center;
 }
 /* PAGINA NOTEBOOKS */
-.notebooks {
-    
-    background-color: #BF6900;
+.notebooks{
+    display: flex;
+    justify-content: center;
+    .card{
+        width: 70vw;
+        height: 30vh;
+        ul{
+            li{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                h5{
+                    font-size: 1.5em;
+                    // width: 45vw;
+                }
+                p{
+                    font-size: 1.8em;
+                    width: 200px;
+                }
+                img{
+                    width: 15em;
+                    height: 15em;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 425px){
     footer{

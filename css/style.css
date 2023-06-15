@@ -213,7 +213,28 @@ footer a:hover, footer span:hover {
 
 /* PAGINA NOTEBOOKS */
 .notebooks {
-  background-color: #BF6900;
+  display: flex;
+  justify-content: center;
+}
+.notebooks .card {
+  width: 70vw;
+  height: 30vh;
+}
+.notebooks .card ul li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.notebooks .card ul li h5 {
+  font-size: 1.5em;
+}
+.notebooks .card ul li p {
+  font-size: 1.8em;
+  width: 200px;
+}
+.notebooks .card ul li img {
+  width: 15em;
+  height: 15em;
 }
 
 @media (max-width: 425px) {
