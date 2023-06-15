@@ -173,6 +173,7 @@ footer{
     text-transform: uppercase;
     &:hover{
         background: #D7D9D7;
+        color: #BF6900;
     }
 }
 // PAGINA PCS ARMADAS
@@ -180,9 +181,9 @@ footer{
     background: rgb(100,110,104);
     background: radial-gradient(circle, rgba(100,110,104,1) 0%, rgba(191,105,0,1) 40%, rgba(215,217,215,1) 100%);
 }
-.pc-armadas{
+.intro{
     background-color: #BF6900;
-    font-size: 2em;
+    font-size: 1.4em;
     font-family: Montserrat;
     padding: 1rem;
     border-radius: 5px;
@@ -198,29 +199,14 @@ footer{
 .notebooks{
     display: flex;
     justify-content: center;
-    .card{
-        width: 70vw;
-        height: 30vh;
-        ul{
-            li{
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                h5{
-                    font-size: 1.5em;
-                    // width: 45vw;
-                }
-                p{
-                    font-size: 1.8em;
-                    width: 200px;
-                }
-                img{
-                    width: 15em;
-                    height: 15em;
-                }
-            }
-        }
+    flex-wrap: wrap;
+    a{
+        margin: 5px 30px;
     }
+}
+.notebook-bg{
+    background: rgb(215,217,215);
+    background: linear-gradient(0deg, rgba(215,217,215,1) 10%, rgba(100,110,104,1) 40%, rgba(191,105,0,1) 60%, rgba(215,217,215,1) 80%);
 }
 @media (max-width: 425px){
     footer{

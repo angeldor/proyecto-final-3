@@ -188,6 +188,7 @@ footer a:hover, footer span:hover {
 }
 .btn:hover {
   background: #D7D9D7;
+  color: #BF6900;
 }
 
 .contenedor {
@@ -195,9 +196,9 @@ footer a:hover, footer span:hover {
   background: radial-gradient(circle, rgb(100, 110, 104) 0%, rgb(191, 105, 0) 40%, rgb(215, 217, 215) 100%);
 }
 
-.pc-armadas {
+.intro {
   background-color: #BF6900;
-  font-size: 2em;
+  font-size: 1.4em;
   font-family: Montserrat;
   padding: 1rem;
   border-radius: 5px;
@@ -215,26 +216,15 @@ footer a:hover, footer span:hover {
 .notebooks {
   display: flex;
   justify-content: center;
-}
-.notebooks .card {
-  width: 70vw;
-  height: 30vh;
-}
-.notebooks .card ul li {
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
 }
-.notebooks .card ul li h5 {
-  font-size: 1.5em;
+.notebooks a {
+  margin: 5px 30px;
 }
-.notebooks .card ul li p {
-  font-size: 1.8em;
-  width: 200px;
-}
-.notebooks .card ul li img {
-  width: 15em;
-  height: 15em;
+
+.notebook-bg {
+  background: rgb(215, 217, 215);
+  background: linear-gradient(0deg, rgb(215, 217, 215) 10%, rgb(100, 110, 104) 40%, rgb(191, 105, 0) 60%, rgb(215, 217, 215) 80%);
 }
 
 @media (max-width: 425px) {
