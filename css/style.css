@@ -6,6 +6,22 @@
   font-family: Montserrat-light;
   src: url(../assets/fonts/Montserrat-Thin.otf);
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Montserrat";
+  background: #BDC0BE;
+}
+
+nav {
+  background-color: #D7D9D7;
+}
+
 /*CONTENIDO DE LA PAGINA DE INICIO CON BS Y FLEXBOX*/
 .flyers {
   display: flex;
@@ -34,60 +50,8 @@
 .titulos {
   display: flex;
   justify-content: center;
-  background: #BF6900;
+  background-color: rgba(0, 0, 0, 0.6);
   color: #D7D9D7;
-  margin: 5rem;
-  border-radius: 0.3rem;
-  padding: 1em 10em;
-}
-
-/* footer con GRIDS*/
-footer {
-  background: #D7D9D7;
-  display: grid;
-  grid-template-areas: "social nosotros legal";
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 2rem;
-  padding: 2rem;
-}
-footer h5 {
-  font-size: 32px;
-}
-footer a, footer span {
-  text-decoration: none;
-  color: #646E68;
-  transition: 0.3s;
-}
-footer a:hover, footer span:hover {
-  color: #040F0F;
-  transition: 0.3s;
-}
-
-.social {
-  grid-area: social;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  font-size: 1.4em;
-  margin: 3rem;
-}
-
-.nosotros {
-  grid-area: nosotros;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  font-size: 1.4em;
-  margin: 3rem;
-}
-
-.legales {
-  grid-area: legal;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  font-size: 1.4em;
-  margin: 3rem;
 }
 
 /* pagina Contactanos */
@@ -98,7 +62,7 @@ footer a:hover, footer span:hover {
 }
 
 .wrapper {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -162,44 +126,6 @@ footer a:hover, footer span:hover {
   color: #c5ecfd;
 }
 
-.sobre-nosotros {
-  display: flex;
-  justify-content: center;
-  margin: 2em;
-  font-size: 3em;
-}
-
-article {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  margin: 2em;
-  padding-top: 2em;
-  border-radius: 5px;
-}
-article p {
-  width: 80%;
-  font-size: 1.4em;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-}
-
-body {
-  font-family: "Montserrat";
-  background: #BDC0BE;
-}
-
-nav {
-  background-color: #D7D9D7;
-}
-
 .btn {
   background: #BF6900;
   text-align: center;
@@ -215,12 +141,12 @@ nav {
 }
 
 .contenedor {
-  background: rgb(100, 110, 104);
-  background: radial-gradient(circle, rgb(100, 110, 104) 0%, rgb(191, 105, 0) 40%, rgb(215, 217, 215) 100%);
+  background: rgb(215, 217, 215);
+  background: linear-gradient(0deg, rgb(215, 217, 215) 10%, rgb(100, 110, 104) 40%, rgb(191, 105, 0) 60%, rgb(215, 217, 215) 80%);
 }
 
 .intro {
-  background-color: #BF6900;
+  background-color: rgba(0, 0, 0, 0.3);
   font-size: 1.4em;
   font-family: Montserrat;
   padding: 1rem;
@@ -252,6 +178,77 @@ nav {
 
 .sobre-nosotros- {
   background-image: url(../assets/img/bg02.jpg);
+}
+
+.sobre-nosotros {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  font-size: 3em;
+}
+
+.historia {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 2em;
+  padding-top: 2em;
+  border-radius: 5px;
+}
+.historia p {
+  width: 80%;
+  font-size: 1.4em;
+}
+
+/* footer con GRIDS*/
+footer {
+  background: #D7D9D7;
+  display: grid;
+  grid-template-areas: "social nosotros legal";
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  padding: 2rem;
+}
+footer h5 {
+  font-size: 32px;
+}
+footer a, footer span {
+  text-decoration: none;
+  color: #646E68;
+  transition: 0.3s;
+}
+footer a:hover, footer span:hover {
+  color: #040F0F;
+  transition: 0.3s;
+}
+
+.social {
+  grid-area: social;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.4em;
+  margin: 3rem;
+}
+
+.nosotros {
+  grid-area: nosotros;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.4em;
+  margin: 3rem;
+}
+
+.legales {
+  grid-area: legal;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.4em;
+  margin: 3rem;
 }
 
 @media (max-width: 425px) {
