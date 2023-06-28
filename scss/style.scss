@@ -119,29 +119,24 @@ footer{
         }
     }
 }
-.social{
-    grid-area: social;
+@mixin componente_footer{
     display: flex;
     flex-direction: column;
     gap: 1em;
     font-size: 1.4em;
     margin: 3rem;
+}
+.social{
+    grid-area: social;
+    @include componente_footer;
 }
 .nosotros{
     grid-area: nosotros;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    font-size: 1.4em;
-    margin: 3rem;
+    @include componente_footer;
 }
 .legales{
     grid-area: legal;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    font-size: 1.4em;
-    margin: 3rem;
+    @include componente_footer;
 }
 // MEDIA QUERIES
 @media (max-width: 768px){
